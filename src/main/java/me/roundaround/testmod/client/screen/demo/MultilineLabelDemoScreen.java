@@ -57,12 +57,14 @@ public class MultilineLabelDemoScreen extends Screen implements DemoScreen {
     firstRow.add(new CyclingButtonWidget.Builder<Size>((value) -> Text.of(value.name())).values(Size.values())
         .initially(this.size)
         .build(0, 0, 80, 20, Text.of("Size"), this::onSizeChange));
-    firstRow.add(new CyclingButtonWidget.Builder<Alignment>((value) -> value.getDisplayText(Constants.MOD_ID,
+    firstRow.add(new CyclingButtonWidget.Builder<Alignment>((value) -> value.getDisplayText(
+        Constants.MOD_ID,
         Axis.HORIZONTAL
     )).values(Alignment.values())
         .initially(Alignment.START)
         .build(0, 0, 80, 20, Text.of("Self X"), this::onAlignSelfXChange));
-    firstRow.add(new CyclingButtonWidget.Builder<Alignment>((value) -> value.getDisplayText(Constants.MOD_ID,
+    firstRow.add(new CyclingButtonWidget.Builder<Alignment>((value) -> value.getDisplayText(
+        Constants.MOD_ID,
         Axis.VERTICAL
     )).values(Alignment.values())
         .initially(Alignment.START)
@@ -76,12 +78,14 @@ public class MultilineLabelDemoScreen extends Screen implements DemoScreen {
             OverflowBehavior.values())
         .initially(OverflowBehavior.SHOW)
         .build(0, 0, 80, 20, Text.of("Over"), this::onOverflowBehaviorChange));
-    secondRow.add(new CyclingButtonWidget.Builder<Alignment>((value) -> value.getDisplayText(Constants.MOD_ID,
+    secondRow.add(new CyclingButtonWidget.Builder<Alignment>((value) -> value.getDisplayText(
+        Constants.MOD_ID,
         Axis.HORIZONTAL
     )).values(Alignment.values())
         .initially(Alignment.START)
         .build(0, 0, 80, 20, Text.of("Text X"), this::onAlignTextXChange));
-    secondRow.add(new CyclingButtonWidget.Builder<Alignment>((value) -> value.getDisplayText(Constants.MOD_ID,
+    secondRow.add(new CyclingButtonWidget.Builder<Alignment>((value) -> value.getDisplayText(
+        Constants.MOD_ID,
         Axis.VERTICAL
     )).values(Alignment.values())
         .initially(Alignment.START)

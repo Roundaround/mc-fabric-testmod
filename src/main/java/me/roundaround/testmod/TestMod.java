@@ -16,5 +16,7 @@ public final class TestMod implements ModInitializer {
   public void onInitialize() {
     TestModConfig.getInstance().init();
     PerWorldTestModConfig.getInstance().init();
+
+    LOGGER.info("Active variant: \"{}\"", Constants.ACTIVE_VARIANT);
   }
 }
