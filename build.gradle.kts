@@ -4,10 +4,6 @@ plugins {
 }
 
 roundalib {
-  constants {
-    enabled = true
-    put("TEST", "Hello world!")
-
-    createVariant("experimental")
-  }
+  constants.put("TEST", "Hello world!")
+  variants.create("experimental")
 }
