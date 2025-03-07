@@ -5,5 +5,8 @@ plugins {
 
 roundalib {
   constants.put("TEST", "Hello world!")
-  variants.create("experimental")
+  variants {
+    create("experimental")
+    buildAndPublishAll()
+  }
 }
