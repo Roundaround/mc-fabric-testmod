@@ -3,6 +3,10 @@ plugins {
   id("roundalib-gradle") version "1.0-SNAPSHOT"
 }
 
+tasks.shadeJar {
+  treeShakeShadedClasses = false
+}
+
 roundalib {
   constants.put("TEST", "Hello world!")
   variants {
