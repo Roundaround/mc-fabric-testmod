@@ -1,5 +1,6 @@
 package me.roundaround.testmod.client;
 
+import me.roundaround.roundalib.gradle.api.annotation.Entrypoint;
 import me.roundaround.testmod.client.screen.ExamplePositionEditScreen;
 import me.roundaround.testmod.client.screen.demo.DemoScreen;
 import me.roundaround.testmod.client.screen.demo.DemoSelectScreen;
@@ -14,6 +15,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 import org.lwjgl.glfw.GLFW;
 
+@Entrypoint(Entrypoint.CLIENT)
 public class TestModClient implements ClientModInitializer {
   @Override
   public void onInitializeClient() {
